@@ -1,0 +1,17 @@
+{
+  "name": "sequelize-float",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mssql": "^6.2.0",
+    "mysql2": "^2.1.0",
+    "sequelize": "^5.21.6",
+    "tedious": "^8.2.0"
+  }
+}
