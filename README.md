@@ -1,4 +1,4 @@
-#Thanks for helping!
+# Thanks for helping!
 
 This is a sample application written to hopefully demo a problem with sequelize 
 (or node-mssql (or tedious, I'm not sure.))
@@ -6,7 +6,7 @@ This is a sample application written to hopefully demo a problem with sequelize
 In it, I try to insert a record into the users table with the networth
  column beign `123456789.123456`, but the database, somehow, gets something else.
 
-##To run this:
+## To run this:
 
 `npm install`
 
