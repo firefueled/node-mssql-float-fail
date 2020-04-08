@@ -14,10 +14,15 @@ const float_value = 123456798.123456
 const sequelize = new Sequelize(DB_DATABASE, DB_USER, DB_PASS, {
     host: DB_HOST,
     dialect: 'mssql',
-    // none of these seem to help
+
     // dialectOptions: {
+    //     options: {
+    //         instanceName: "<add-instance-if needed>",
+    //     },
+
+    // none of these seem to help
     //     supportBigNumbers: true,
-    //     bigNumberStrings: true
+    //     bigNumberStrings: true,
     // },
 });
 
@@ -29,13 +34,14 @@ const User = sequelize.define('User', {
         // type: DataTypes.DOUBLE,
     },
 }, {
-    timestamps: false
+    timestamps: false,
 });
-
 
 // curl to test this insert:
 // curl localhost:3000
 const server = http.createServer(async (req, res) => {
+    // using the mssql client directly does insert the correct value
+
     // try {
     //     const pool = await sql.connect(`mssql://${DB_USER}:${DB_PASS}@${DB_HOST}/${DB_DATABASE}`)
     //     await pool.request()
